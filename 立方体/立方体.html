@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box{width:500px;height: 500px;border: 1px solid red;margin: 0 auto;perspective: 800px;}
+			.box ul{width: 200px;height: 200px;border: 1px solid red;margin: 150px;position: relative;transform-style: preserve-3d;animation:ask 6s linear infinite;transform-origin: center center 100px ;}
+			.box ul li{list-style:none;position: absolute;opacity: 0.5;}
+			.box ul li:nth-of-type(1){width: 200px;height: 200px;background: yellow;left: 200px;transform-origin: left;transform:rotateY(-90deg);}
+			.box ul li:nth-of-type(2){width: 200px;height: 200px;background: pink;top: 200px;transform-origin: top;transform:rotateX(90deg);}
+			.box ul li:nth-of-type(3){width: 200px;height: 200px;background: blue;right: 200px;transform-origin: right;transform: rotateY(90deg);}
+			.box ul li:nth-of-type(4){width: 200px;height: 200px;background: greenyellow;bottom:200px;transform-origin: bottom;transform: rotateX(-90deg);}
+			.box ul li:nth-of-type(5){width: 200px;height: 200px;background: gray;transform:translateZ(200px);}
+			.box ul li:nth-of-type(6){width: 200px;height: 200px;background: goldenrod;}
+			@keyframes ask{
+				from{transform: rotateY(0deg);}
+				to{transform: rotateY(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>
